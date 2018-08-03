@@ -47,7 +47,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a {
+	text-decoration:none;
+	color:inherit;
+}
+* {
+	box-sizing:border-box;
+}
 /*END CSS RESET*/
 
 body, html {
@@ -68,18 +74,18 @@ body, html {
 }
 #intro{
 	position:fixed;
-	width:100%;
+	width:50%;
 	height:100%;
 	display:flex;
 	align-items:center;
 }
 #intro-flex-left{
 	position:absolute;
-	right:76%;
+	right:52%;
 }
 #intro-flex-right{
 	position:absolute;
-	left:26%;
+	left:52%;
 	width:180px;
 }
 #intro-name{
@@ -88,27 +94,102 @@ body, html {
 	font-size:80px;
 	line-height:80px;
 }
+#about{
+	margin-left:50%;
+	height:100%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	width:350px;
+	font-size:16px;
+	line-height:23px;
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+}
+.about-nav{
+	color:#fafafa;
+	font-weight:700;
+	background-color:#0074D9;
+	margin-right:7px;
+	cursor:pointer;
+	padding:5px;
+	border-radius:3px;
+	
+	font-size:12px;
+	font-family:'Roboto',sans-serif;
+}
+.about-nav:hover{
+	background-color:#7FDBFF;
+}
 #projects{
 	margin-left:50%;
 }
 .item-project{
-box-sizing:border-box;
-  border-left-style:dotted;
-  border-left-width:1px;
-  border-left-color:#ccc;
+	box-sizing:border-box;
+  border-bottom-style:dotted;
+  border-bottom-width:1px;
+  border-bottom-color:#ccc;
   padding-left:20px;
-  padding-bottom:80px;
+  padding-bottom:10px;
+  margin-bottom:80px;
+  line-height:1.5;
+  width:420px;
+}
+.item-image{
+	width:350px;
 }
 .item-date{
 	
 
 }
+.item-title{
+	font-family:'Roboto', sans-serif;
+	
+	font-weight:700;
+	font-size:28px;
+}
 .item-date span{
-	background-color:#ccc;
-	color:#fff;
-	padding-left:8px;
-	margin-left:-21px;
-	border-top-right-radius:10px;
-	border-bottom-right-radius:10px;
-	font-size:8px;
+	font-family:'Roboto',sans-serif;
+	/*background-color:#fdd835;*/
+	font-weight:300;
+	padding:3px 3px 5px 3px;
+	font-size:11px;
+	border-top-right-radius:3px;
+}
+
+@media screen and (max-width:400px){
+	#intro, #about, #projects{
+		width:90%;
+		margin-left:5%;
+		
+	}
+	#intro-cont{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+	}
+	#intro-flex-left{
+		right:auto;
+		position:relative;
+		padding-right:4px;
+	}
+	#intro-flex-right{
+		left:auto;
+		position:relative;
+		padding-left:4px;
+	}
+	#about{
+		position:relative;
+		height:auto;
+	}
+	#intro{
+		position:relative;
+		height:auto;
+		margin-top:0px;
+
+	}
+	.item-image{
+		width:100%;
+	}
 }

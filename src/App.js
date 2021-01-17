@@ -55,7 +55,7 @@ class About extends React.Component{
 		return (
 			<div id="about">
 				<div>
-				I'm a journalist who loves to code and design. I currently do so as a multimedia editor for NBC's Owned Television Stations. Check out my: <br /><br />
+				I'm a journalist who loves to code and design. I currently do so as a data visualization developer at Reuters Graphics. Check out my: <br /><br />
 					<Link to="projects" smooth={true}><span className="about-nav" id="about-gfx">Projects</span></Link>
 					<a href={ResumePDF} target="_blank"><span className="about-nav" id="about-resume">Resume</span></a>
 				</div>

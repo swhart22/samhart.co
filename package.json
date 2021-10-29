@@ -6,6 +6,7 @@
     "d3-array": "1.2.1",
     "d3-axis": "1.0.8",
     "d3-brush": "1.0.4",
+    "d3-fetch": "^3.0.1",
     "d3-geo": "1.9.1",
     "d3-scale": "2.0.0",
     "d3-selection": "1.3.0",
@@ -13,17 +14,19 @@
     "d3-svg-legend": "2.25.5",
     "d3-time-format": "^2.1.1",
     "d3-transition": "1.1.1",
+    "google-spreadsheet": "^3.1.15",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
     "react-scroll": "^1.7.7",
-    "sheetsy": "^2.1.3"
+    "sheetsy": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build/ s3://samhart.co"
+    "deploy": "aws s3 sync build/ s3://samhart.co",
+    "google": "node ./bin/google/index.js"
   }
 }

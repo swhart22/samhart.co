@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
 import './App.css';
+
+import * as Scroll from 'react-scroll';
+
+import React, { Component } from 'react';
+
+import ResumePDF from './resume.pdf';
 import data from './Data.js';
 import face from './face_copy.png';
-import * as Scroll from 'react-scroll';
-import ResumePDF from './resume.pdf';
 
 const d3 = Object.assign({}, require('d3-time-format'));
 
@@ -89,7 +92,6 @@ class Item extends React.Component{
 }
 class Skill extends React.Component{
 	render(){
-		console.log(this.props.skill);
 		return (
 			<span>
 				{this.props.skill}
@@ -107,12 +109,12 @@ class Projects extends React.Component {
 			};	
 	}
 	componentDidMount(){	
-		data.then(data => {
-			// console.log(data);
+		
+		
 			this.setState({
 				projects: data
 			});
-		});
+		
 	}
 	render(){
 

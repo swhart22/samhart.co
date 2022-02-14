@@ -13,7 +13,9 @@ const client_secret = process.env.GOOGLE_OAUTH_CONSUMER_SECRET;
 const redirect_uri = process.env.GOOGLE_OAUTH_REDIRECT_URI;
 
 // const oauth2Client = new google.auth.OAuth2(client_id, client_secret);
-const SCOPES = ['https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/documents'];
+const SCOPES = ['https://www.googleapis.com/auth/drive',
+'https://www.googleapis.com/auth/drive.metadata.readonly',
+'https://www.googleapis.com/auth/documents'];
 const TOKEN_PATH = 'token.json';
 
 async function run () {

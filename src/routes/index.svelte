@@ -12,13 +12,14 @@
 </script>
 
 <svelte:head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LD8Y748M5B"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT9P5BESZP"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-LD8Y748M5B');
+		gtag('config', 'G-PT9P5BESZP');
 	</script>
 	<title>Sam Hart | Journalist</title>
 </svelte:head>

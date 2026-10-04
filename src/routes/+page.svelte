@@ -1,10 +1,10 @@
 <script>
 	import Intro from '#lib/components/intro/Intro.svelte';
+    import Footer from '#lib/components/footer/Footer.svelte';
+    import ProjectGrid from '#lib/components/projects/ProjectGrid.svelte';
     let { data } = $props();
 
     const page = data;
-
-    $inspect(data);
 
 	export const prerender = true;
 </script>
@@ -27,6 +27,18 @@
 		<Intro header={page.header} />
 	</div>
 </section>
+
+{#each page.blocks as block}
+    {#if block.type === 'project-block' && block.id === 'featured'}
+    <section class="featured-projects wide">
+        <ProjectGrid projects={page.projects}/>
+    </section>
+	{:else if block.type === 'footer-block'}
+        <section class="footer">
+            <Footer block={block} />
+        </section>
+	{/if}
+{/each}
 
 <style lang='scss'>
 	:global {

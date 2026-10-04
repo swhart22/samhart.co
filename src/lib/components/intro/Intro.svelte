@@ -15,7 +15,7 @@
 <p class="bio">{@html marked.parseInline(header.bio)}</p>
 <p class="contact">
     <a href="mailto:s.w.hart22@gmail.com">
-        <Icon size="2x" icon="fa-solid:at" />
+        <Icon size="2x" icon="fa-solid:envelope" />
     </a>
     <a href="https://www.linkedin.com/in/sam-hart-ab065376/" target="_blank">
         <Icon size="2x"  icon="fa-brands:linkedin" />

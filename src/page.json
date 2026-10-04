@@ -23,7 +23,7 @@
     },
     {
       "type": "footer-block",
-      "text": "## Who I am\n\nI’m based in Brooklyn, NY and love television from Succession to Real Housewives, reading, food, running and much more. I love to talk about my work and/or any of the above. Reach out!"
+      "text": "## Who I am\n\nI’m a Texas native living in Brooklyn. I love a range of television from Succession to Real Housewives, reading, food, running and much more. Reach out!"
     }
   ],
   "projects": [
@@ -37,7 +37,7 @@
     },
     {
       "name": "Germany’s national election: Polls",
-      "image": "germany-polls.gif",
+      "image": "germany-polls.png",
       "URL": "https://www.reuters.com/graphics/GERMANY-ELECTION/POLLS/akveedlravr/",
       "description": "This simple poll chart was a major back end exercise: I also created the scraper that pulled polling results from Germany’s federal website and fed them into this chart, which updated multiple times daily leading into the Feb. 23 election.",
       "date": "2/22/25",

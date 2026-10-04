@@ -54,7 +54,7 @@
 		margin-bottom: 3rem !important;
 	}
 	.dummy-wrap {
-		// height: 80%;
+		/* height: 80%; */
 	}
 	
 </style>

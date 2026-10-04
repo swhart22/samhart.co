@@ -1,26 +1,42 @@
-# create-svelte
+# sv
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-> Note: the `@next` is temporary
+To recreate this project with the same configuration:
+
+```sh
+# recreate this project
+npx sv@1.0.1 create --template minimal --types ts --install npm sam-website
+```
+
+## Adding features
+
+Add features to your project with `sv add`:
+
+```sh
+npx sv add
+```
+
+For example, to add Tailwind CSS:
+
+```sh
+npx sv add tailwindcss
+```
 
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
+```sh
 npm run dev
 
 # or start the server and open the app in a new browser tab
@@ -31,10 +47,10 @@ npm run dev -- --open
 
 To create a production version of your app:
 
-```bash
+```sh
 npm run build
 ```
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
